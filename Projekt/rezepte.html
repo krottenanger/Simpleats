@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplEats – Rezepte</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">SimplEats</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+                <li class="nav-item active"><a class="nav-link" href="rezepte.html">Rezepte</a></li>
+                <li class="nav-item"><a class="nav-link" href="rezept-erstellen.html">Rezept hinzufügen</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="registrierung.html">Registrieren</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">Alle Rezepte</h1>
+
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Rezept suchen...">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark" type="button">Suchen</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-2 mt-md-0">
+                <select class="form-control">
+                    <option value="">Alle Kategorien</option>
+                    <option>Fleisch</option>
+                    <option>Vegetarisch</option>
+                    <option>Vegan</option>
+                    <option>Pasta</option>
+                    <option>Suppen</option>
+                    <option>Desserts</option>
+                    <option>Backen</option>
+                </select>
+            </div>
+            <div class="col-md-3 mt-2 mt-md-0">
+                <select class="form-control">
+                    <option value="">Sortieren nach</option>
+                    <option>Neueste zuerst</option>
+                    <option>Beliebteste</option>
+                    <option>Kürzeste Zubereitung</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-img-placeholder"></div>
+                    <div class="card-body">
+                        <span class="badge badge-warning mb-2">Italienisch</span>
+                        <h5 class="card-title">Spaghetti Carbonara</h5>
+                        <p class="card-text text-muted">Klassische Pasta mit cremiger Ei-Speck-Sauce.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">30 Min | 2 Port.</small>
+                            <a href="rezept-detail.html" class="btn btn-sm btn-outline-dark">Ansehen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-img-placeholder"></div>
+                    <div class="card-body">
+                        <span class="badge badge-success mb-2">Vegetarisch</span>
+                        <h5 class="card-title">Gemüse-Curry</h5>
+                        <p class="card-text text-muted">Buntes Curry mit Kokosmilch und saisonalem Gemüse.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">40 Min | 4 Port.</small>
+                            <a href="rezept-detail.html" class="btn btn-sm btn-outline-dark">Ansehen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-img-placeholder"></div>
+                    <div class="card-body">
+                        <span class="badge badge-danger mb-2">Dessert</span>
+                        <h5 class="card-title">Schokoladen-Mousse</h5>
+                        <p class="card-text text-muted">Luftig-leichtes Mousse au Chocolat.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">20 Min | 4 Port.</small>
+                            <a href="rezept-detail.html" class="btn btn-sm btn-outline-dark">Ansehen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-img-placeholder"></div>
+                    <div class="card-body">
+                        <span class="badge badge-info mb-2">Suppe</span>
+                        <h5 class="card-title">Tomatensuppe</h5>
+                        <p class="card-text text-muted">Cremige Tomatensuppe mit frischen Kräutern.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">25 Min | 3 Port.</small>
+                            <a href="rezept-detail.html" class="btn btn-sm btn-outline-dark">Ansehen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-img-placeholder"></div>
+                    <div class="card-body">
+                        <span class="badge badge-secondary mb-2">Backen</span>
+                        <h5 class="card-title">Bananenbrot</h5>
+                        <p class="card-text text-muted">Saftiges Bananenbrot – ideal für überreife Bananen.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">60 Min | 8 Port.</small>
+                            <a href="rezept-detail.html" class="btn btn-sm btn-outline-dark">Ansehen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-img-placeholder"></div>
+                    <div class="card-body">
+                        <span class="badge badge-primary mb-2">Fleisch</span>
+                        <h5 class="card-title">Rindergulasch</h5>
+                        <p class="card-text text-muted">Zartes Gulasch mit Paprika und Würzkräutern.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">90 Min | 4 Port.</small>
+                            <a href="rezept-detail.html" class="btn btn-sm btn-outline-dark">Ansehen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <nav class="mt-2 mb-5">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled"><a class="page-link" href="#">&laquo;</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <small>&copy; 2026 SimplEats</small>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplEats – Rezept hinzufügen</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">SimplEats</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Startseite</a></li>
+                <li class="nav-item"><a class="nav-link" href="rezepte.html">Rezepte</a></li>
+                <li class="nav-item active"><a class="nav-link" href="rezept-erstellen.html">Rezept hinzufügen</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="registrierung.html">Registrieren</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4 mb-5">
+        <h1 class="mb-4">Neues Rezept hinzufügen</h1>
+
+        <form>
+
+            <div class="card mb-4">
+                <div class="card-header bg-dark text-white">Allgemeine Informationen</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="titel">Rezepttitel *</label>
+                        <input type="text" class="form-control" id="titel" placeholder="z.B. Spaghetti Carbonara" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="beschreibung">Kurzbeschreibung</label>
+                        <textarea class="form-control" id="beschreibung" rows="3" placeholder="Beschreibe dein Rezept kurz..."></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="kategorie">Kategorie</label>
+                            <select class="form-control" id="kategorie">
+                                <option value="">Bitte wählen</option>
+                                <option>Fleisch</option>
+                                <option>Vegetarisch</option>
+                                <option>Vegan</option>
+                                <option>Pasta</option>
+                                <option>Suppen</option>
+                                <option>Desserts</option>
+                                <option>Backen</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="schwierigkeit">Schwierigkeit</label>
+                            <select class="form-control" id="schwierigkeit">
+                                <option>Einfach</option>
+                                <option>Mittel</option>
+                                <option>Schwer</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="portionen">Portionen</label>
+                            <input type="number" class="form-control" id="portionen" min="1" value="2">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="zubereitungszeit">Zubereitungszeit (Min.)</label>
+                            <input type="number" class="form-control" id="zubereitungszeit" min="1">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="kochzeit">Koch-/Backzeit (Min.)</label>
+                            <input type="number" class="form-control" id="kochzeit" min="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header bg-dark text-white">Zutaten</div>
+                <div class="card-body">
+                    <div class="form-row mb-2">
+                        <div class="col-5"><input type="text" class="form-control" placeholder="Zutat"></div>
+                        <div class="col-3"><input type="text" class="form-control" placeholder="Menge"></div>
+                        <div class="col-4"><input type="text" class="form-control" placeholder="Einheit"></div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col-5"><input type="text" class="form-control" placeholder="Zutat"></div>
+                        <div class="col-3"><input type="text" class="form-control" placeholder="Menge"></div>
+                        <div class="col-4"><input type="text" class="form-control" placeholder="Einheit"></div>
+                    </div>
+                    <div class="form-row mb-2">
+                        <div class="col-5"><input type="text" class="form-control" placeholder="Zutat"></div>
+                        <div class="col-3"><input type="text" class="form-control" placeholder="Menge"></div>
+                        <div class="col-4"><input type="text" class="form-control" placeholder="Einheit"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header bg-dark text-white">Zubereitung</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label>Schritt 1</label>
+                        <textarea class="form-control" rows="2" placeholder="Ersten Schritt beschreiben..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Schritt 2</label>
+                        <textarea class="form-control" rows="2" placeholder="Zweiten Schritt beschreiben..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Schritt 3</label>
+                        <textarea class="form-control" rows="2" placeholder="Dritten Schritt beschreiben..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header bg-dark text-white">Bild hochladen</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="rezeptBild">Rezeptfoto</label>
+                        <input type="file" class="form-control-file" id="rezeptBild" accept="image/*">
+                        <small class="form-text text-muted">JPG, PNG oder WebP, max. 5 MB</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-between">
+                <a href="rezepte.html" class="btn btn-outline-secondary">Abbrechen</a>
+                <button type="submit" class="btn btn-dark">Rezept veröffentlichen</button>
+            </div>
+
+        </form>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <small>&copy; 2026 SimplEats</small>
+    </footer>
+
+</body>
+</html>

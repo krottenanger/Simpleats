@@ -1,0 +1,34 @@
+/* ===== Allgemein ===== */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    margin-bottom: 0;
+}
+
+/* ===== Rezeptkarten ===== */
+.card-img-placeholder {
+    height: 160px;
+    background-color: #dee2e6;
+}
+
+/* ===== Avatar (Profilseite) ===== */
+.avatar-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #343a40;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: auto;
+}
